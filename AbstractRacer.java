@@ -42,6 +42,10 @@ public abstract class AbstractRacer
     {
         return position;
     }
+    public String getName()
+    {
+        return name;
+    }
  /**
  * The setPosition() method takes a parameter specifying the
  * next position and mutates position to that specified location.
