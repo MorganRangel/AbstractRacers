@@ -33,18 +33,32 @@ public class Race
     {
         for(int i = 0; i < racers.size(); i++)
         {
-            if(racers.get(i).getPosition() >= DISTANCE)
-            {
-                System.out.println("Winner is " + racers.get(i).getName());
-            }
-            else
-            {
             for(int m = 0; m < racers.size(); m++)
                 {
                 racers.get(m).move();
                 }
-            }
         }   
+    }
+    public boolean isOver()
+    {
+        for(int i = 0; i < racers.size(); i++)
+        {
+        if(racers.get(i).getPosition() >= DISTANCE)
+            
+            return true;
+        else
+            return false;
+        }
+    }
+    public String getWinner()
+    {
+        for(int i = 0; i < racers.size(); i++)
+        {
+        if(racers.get(i).getPosition() >= DISTANCE)
+        {
+            return racers.get(i).getName();
+        }
+    }
     }
     public String toString()
     {
