@@ -4,14 +4,14 @@
  * @3/4/2024
  */
 
-public class Tortoise extends Racer
+public class Tortoise extends AbstractRacer
 {
-    private int position; 
+   
 
     public Tortoise(String name)
     {
         super(name);
-        position = 0;
+       
     }
 
     /**
@@ -20,6 +20,6 @@ public class Tortoise extends Racer
 
     public void move()
     {
-        setPosition(getPosition() + 1)
+        setPosition(getPosition() + 1);
     }
 }

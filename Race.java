@@ -45,5 +45,13 @@ public class Race
                 }
             }
         }   
- }
+    }
+    public String toString()
+    {
+        for(int i = 0; i < racers.size(); i++)
+        {
+        String result =  super.toString() + "[Name=" + racers.get(i).getName() + ", position=" + racers.get(i).getPosition()  + "]";
+        }
+        return result;
+    }
 }
