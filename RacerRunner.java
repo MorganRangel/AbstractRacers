@@ -13,14 +13,14 @@ public class RacerRunner
         race.addRacer(t);
         race.addRacer(h);
         race.addRacer(k);
-        if(!race.isOver())
+        System.out.println(race.toString());
+        while(race.isGoing())
         {
-            race.update();
-            race.toString();
+            t.move();
+            k.move();
+            h.move();
+            System.out.println(race.toString());
         }
-        else
-        {
             System.out.println("Winner is " + race.getWinner());
-        }
     }
 }

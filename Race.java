@@ -33,22 +33,18 @@ public class Race
     {
         for(int i = 0; i < racers.size(); i++)
         {
-            for(int m = 0; m < racers.size(); m++)
-                {
-                racers.get(m).move();
-                }
+                racers.get(i).move();
         }   
     }
-    public boolean isOver()
+    public boolean isGoing()
     {
         for(int i = 0; i < racers.size(); i++)
         {
         if(racers.get(i).getPosition() >= DISTANCE)
             
-            return true;
-        else
             return false;
         }
+        return true;
     }
     public String getWinner()
     {
@@ -58,13 +54,18 @@ public class Race
         {
             return racers.get(i).getName();
         }
-    }
+        }
+        return null;
     }
     public String toString()
     {
+        String result = "";
         for(int i = 0; i < racers.size(); i++)
         {
-        String result =  super.toString() + "[Name=" + racers.get(i).getName() + ", position=" + racers.get(i).getPosition()  + "]";
+        result +=  super.toString() + "[Name=" + racers.get(i).getName() + ", position=" 
+        + racers.get(i).getPosition()  + "]";
+        result += "\n";
+
         }
         return result;
     }

@@ -52,6 +52,6 @@ public abstract class AbstractRacer
  */
     public void setPosition(int newPosition)
     {
-        this.position = position;
+       position = newPosition;
     }   
 }
