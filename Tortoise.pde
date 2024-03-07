@@ -6,19 +6,11 @@
 
 public class Tortoise extends AbstractRacer
 {
-<<<<<<< HEAD
-   
-=======
->>>>>>> de4ada2 (Updated raceRunner)
 
     public Tortoise(String name)
     {
         super(name);
-<<<<<<< HEAD
-       
-=======
         
->>>>>>> de4ada2 (Updated raceRunner)
     }
 
     /**
